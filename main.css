@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+:root{
+    --Very-dark-blue-: hsl(233, 49%, 7%);
+    --Dark-desaturated-blue : hsl(244, 38%, 16%);
+    --Soft-violet: hsl(277, 64%, 61%);
+    --White: hsl(0, 0%, 100%);
+    --white-two: hsla(0, 0%, 100%, 0.75);
+    --white-three: hsla(0, 0%, 100%, 0.6);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--Very-dark-blue-);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+   
+}
+
+
+.box1{
+    background-color: var(--Dark-desaturated-blue);
+    color: var(--White);
+    border-radius: 10px;
+    
+}
+
+.box2{
+    float: left;
+    background-color: var(--Dark-desaturated-blue);
+    padding: 0px;
+    margin: 50px 50px;
+    margin-right: 120px;
+}
+
+.card_right{
+    float: right;
+    width: 65vh;
+    height: 54vh;
+    background-color: var(--Soft-violet);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.card_right img{
+    height: 54vh;
+    opacity: 0.8;
+    mix-blend-mode: hard-light;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.box2 h1{
+    margin-bottom: 20px;
+    font-size: 36px;
+    padding: 2px 1px;
+}
+
+.incolor{
+    font-size: 36px;
+    color: var(--Soft-violet);
+}
+
+.box1 .box2 p{
+    color: var(--white-three);
+}
+
+.text{
+    margin-bottom: 40px;
+    max-width: 380px;
+}
+
+.text p{
+    line-height: 4vh;
+}
+
+.box3{
+    text-transform: uppercase;
+    display:flex;
+    justify-content: space-between;
+    margin-right: 25px;
+}
+
+.h3{
+    font-size: 12px;
+    line-height: 1.5;
+
+}
+
+.box3 span{
+    color: var(--White);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 960px){
+    body{
+        min-height: 160vh;
+        align-items: center;
+        text-align: center;
+    }
+
+    .box1{
+        max-width: 380px;
+
+    }
+
+    .box2{
+        width: 280px;
+    }
+
+    .text h1{
+        font-size: 27px;
+    }
+
+    .text p{
+        font-size: 16px;
+        line-height: 4vh;
+    }
+
+    .card_right{
+        width: 380px;
+        height: 45vh;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .card_right img{
+        height: 45vh;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .box3{
+        display: block;
+    }
+
+    .box3 p{
+        margin-bottom: 20px;
+        width: 280px;
+    }
+}
